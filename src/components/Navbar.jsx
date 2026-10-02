@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
+import logo from "/src/assets/logo.png"
 
 const Navbar = () => {
 
@@ -11,7 +12,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg bg-light navbar-light sticky-top">
         <div className="container">
           <Link className="navbar-brand" to="/">
-            <img src="../src/assets/logo.png" alt="Logo" style={{ height:"75px", scale:"2" }} />
+            <img src={logo} alt="Logo" style={{ height:"75px", scale:"2" }} />
           </Link>
           <button
             className="navbar-toggler"
